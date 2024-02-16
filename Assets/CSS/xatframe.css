@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900, 800, 700, 600, 500, 400, 300, 200, 100');
+
+*, a{ font-family: "Montserrat", Arial, sans-serif; text-decoration: none; color: #edf0f1; }
+html { display: flex; height: 100%; width: 100%; background: linear-gradient(90deg, #202025, #202025, #202025);}
+
+body{ 
+    margin: auto;
+    color: #edf0f1; 
+    width: 100vw; 
+    height: 100vh; 
+    background-image: url("Background_TopRight.png"), url("Background_BottomLeft.png");
+    background-position: top right, bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button{
+    margin-top: 40px;
+    padding: 5px; 
+    width: 100%; 
+    height: 40px; 
+    border: 0px; 
+    border-radius: 10px; 
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #00cfff, #005ead);
+}
+
+button:hover { border: 3px solid #edf0f1; }
+
+#top-section{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    border: 0px solid white;
+}
+
+#my-photo{
+    width: 20%;
+    height: 20%;
+    border-radius: 500px;
+}
+
+#my-photo img{
+    width: 100%;
+    height: auto;
+}
+
+#my-name{
+    flex-direction: column;
+    flex-basis: 50%;
+    height: auto;
+    margin: auto 50px auto 0;
+    padding-top: 100px;
+    border: 0px solid red;
+}
+
+#my-name div:first-child{
+    font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 15px;
+    border-bottom: 3px solid white;
+}
+
+#my-name div:last-child{
+    font-size: x-large;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+#my-name div{
+    font-size: xx-large;
+    padding: 20px 0;
+    border: 0px solid blue;
+}
+
+#bottom-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 0px solid red;
+}
+
+.section-box{
+    flex-basis: 15%;
+    padding: 50px;
+    margin: 0 100px;
+    background-color: #16161a;
+    border-radius: 20px;
+}
+
+.box-title{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 10px;
+}
+
+.box-title img{
+    width: 10%;
+    height: 10%;
+    margin: auto 0;
+}
+
+.box-title p{
+    margin-left: 20px;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#social-media div{
+    flex-basis: 50%;
+    margin: auto;
+}

@@ -1,0 +1,122 @@
+@media(max-width: 2560px){
+    
+}
+
+@media(max-width: 1920px){
+    .section-box{
+        margin: 0 50px;
+    }
+
+    #my-photo{
+        width: 30%;
+    }
+}
+
+@media(max-width: 1600px){
+    
+}
+
+@media(max-width: 1440px){
+    .section-box{
+        margin: 0 25px;
+    }
+}
+
+@media(max-width: 1280px){
+    #my-photo{
+        width: 40%;
+    }
+
+    #my-name{
+        flex-basis: 30%;
+    }
+
+    #bottom-section{
+        flex-basis: 50%;
+        flex-direction: column;
+    }
+
+    .section-box{
+        flex-basis: 100%;
+        margin: 50px 200px;
+    }
+
+    .box-title img{
+        width: 5%;
+        height: 5%;
+    }
+}
+
+@media(max-width: 1080px){
+    #top-section{
+        flex-direction: column;
+    }
+
+    #my-photo{
+        width: 50%;
+        margin: auto;
+    }
+
+    #my-name{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 1024px){
+    
+}
+
+@media(max-width: 962px){
+    
+}
+
+@media(max-width: 810px){
+    
+}
+
+@media(max-width: 768px){
+    .section-box{
+        margin: 50px 100px;
+    }
+}
+
+@media(max-width: 640px){
+    
+}
+
+@media(max-width: 601px){
+    
+}
+
+@media(max-width: 540px){
+    #top-section{
+        margin: 100px 0 50px 0;
+    }
+    
+    #my-photo{
+        width: 100%;
+        margin: auto;
+    }
+
+    #my-name{
+        width: 65%;
+        margin: auto;
+    }
+    
+    .section-box{
+        margin: 50px 50px;
+    }
+}
+
+@media(max-width: 425px){
+    
+}
+
+@media(max-width: 375px){
+    
+}
+
+@media(max-width: 320px){
+    
+}
