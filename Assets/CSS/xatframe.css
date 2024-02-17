@@ -82,7 +82,7 @@ button:hover { border: 3px solid #edf0f1; }
     flex-direction: column;
     flex-basis: 30%;
     height: auto;
-    padding-top: 225px;
+    padding-top: 150px;
     border: 0px solid red;
 
     animation-name: name-anim;
