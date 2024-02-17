@@ -3,18 +3,20 @@
 *, a{ font-family: "Montserrat", Arial, sans-serif; text-decoration: none; color: #edf0f1; }
 html { display: flex; height: 100%; width: 100%; background: linear-gradient(90deg, #202025, #202025, #202025);}
 
-body{ 
+body
+{ 
     margin: auto;
     color: #edf0f1; 
     width: 100vw; 
     height: 100vh; 
-    background-image: url("Background_TopRight.png"), url("Background_BottomLeft.png");
+    background-image: url(""), url("");
     background-position: top right, bottom left;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-button{
+button
+{
     margin-top: 40px;
     padding: 5px; 
     width: 100%; 
@@ -27,7 +29,20 @@ button{
 
 button:hover { border: 3px solid #edf0f1; }
 
-#top-section{
+@keyframes opacity-anim
+{
+    0% { opacity: 0; }
+    100% { opacity: 100; }
+}
+
+@keyframes top-section-anim
+{
+    0% { margin: 400px 0; }
+    100% { margin: 100px 0; }
+}
+
+#top-section
+{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -35,64 +50,113 @@ button:hover { border: 3px solid #edf0f1; }
     width: 100%;
     height: auto;
     margin: 100px 0;
-    border: 0px solid white;
+    border: 0px solid #edf0f1;
+
+    animation-name: top-section-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
-#my-photo{
-    width: 20%;
-    height: 20%;
-    border-radius: 500px;
-}
-
-#my-photo img{
-    width: 100%;
+#my-photo
+{
+    flex-basis: 20%;
     height: auto;
 }
 
-#my-name{
+#my-photo img
+{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+@keyframes name-anim
+{
+    0% { flex-basis: 0%; width: 0; height: 0; opacity: 0%; }
+    75% { flex-basis: 30%; }
+    100% { opacity: 100%; }
+}
+
+#my-name
+{
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: 30%;
     height: auto;
-    margin: auto 50px auto 0;
-    padding-top: 100px;
+    padding-top: 225px;
     border: 0px solid red;
+
+    animation-name: name-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 
-#my-name div:first-child{
+@keyframes nameText-Anim { 0% { font-size: 0; } 25% { font-size: 0; } }
+
+#my-name div:first-child
+{
     font-size: xx-large;
     font-weight: bolder;
     letter-spacing: 15px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #edf0f1;
+
+    animation-name: nameText-Anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
-#my-name div:last-child{
+@keyframes quote-Anim { 0% { font-size: 0; opacity: 0;} 50% { opacity: 0; } }
+
+#my-name div:last-child
+{
     font-size: x-large;
     font-weight: 500;
     margin-top: 50px;
+
+    animation-name: quote-Anim;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
-#my-name div{
+#my-name div
+{
     font-size: xx-large;
     padding: 20px 0;
     border: 0px solid blue;
+
+    animation-name: quote-Anim;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
-#bottom-section{
+@keyframes bottom-Section-anim
+{
+    0% { height: 0px; opacity: 0%; }
+    100% { height: 300px; opacity: 100%; }
+}
+
+#bottom-section
+{
     display: flex;
     flex-direction: row;
     justify-content: center;
     border: 0px solid red;
 }
 
-.section-box{
-    flex-basis: 15%;
+.section-box
+{
+    width: 350px;
+    height: 300px;
     padding: 50px;
     margin: 0 100px;
     background-color: #16161a;
     border-radius: 20px;
+    animation-name: bottom-Section-anim;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
 }
 
-.box-title{
+.box-title
+{
     display: flex;
     flex-direction: row;
     font-weight: bold;
@@ -100,23 +164,40 @@ button:hover { border: 3px solid #edf0f1; }
     letter-spacing: 10px;
 }
 
-.box-title img{
+.box-title img
+{
     width: 10%;
     height: 10%;
     margin: auto 0;
 }
 
-.box-title p{
-    margin-left: 20px;
+.box-title p { margin-left: 20px; }
+
+.box-description
+{
+    opacity: 100%;
+    animation-name: opacity-anim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
 }
 
-#social-media{
+#social-media
+{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-#social-media div{
+#social-media div
+{
     flex-basis: 50%;
+    margin: 10px auto 0 auto;
+}
+
+#social-media img
+{
+    max-width: 35%;
+    max-height: 35%;
     margin: auto;
 }
